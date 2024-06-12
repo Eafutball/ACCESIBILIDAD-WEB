@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesibilidad Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(150deg, #2980b9, #2c3e50);
+        }
+        header {
+            background-color:white;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            margin-top: 10px;
+        }
+        li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        li::before {
+            content: "\2022";  /* Código Unicode para el bullet */
+            color: #333;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Accesibilidad Web</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Importancia</h2>
+            <p>La accesibilidad web es crucial para garantizar que todas las personas puedan acceder y utilizar los recursos en línea de manera equitativa. Sin ella, se excluye a aquellos con discapacidades, limitando su participación en la sociedad digital.</p>
+        </section>
+        <section>
+            <h2>Principios</h2>
+            <ul>
+                <li><strong>Perceptibilidad:</strong> Proporcionar descripciones detalladas para imágenes utilizando el atributo "alt" en HTML.</li>
+                <li><strong>Operabilidad:</strong> Asegurarse de que todas las funciones del sitio web se puedan utilizar sin depender exclusivamente del mouse.</li>
+                <li><strong>Comprensibilidad:</strong> Utilizar una estructura de navegación clara y consistente en todo el sitio web.</li>
+                <li><strong>Robustez:</strong> Utilizar HTML y CSS válidos y semánticamente correctos para garantizar la compatibilidad con una amplia gama de dispositivos y navegadores.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Ejemplos</h2>
+            <p><strong>Perceptibilidad:</strong> Una imagen de un perro debería tener el atributo "alt" especificando "Perro jugando en el parque".</p>
+            <img src="Imagen Perro.jpeg" alt="Perro jugando en el parque">
+            <p><strong>Operabilidad:</strong> Un menú desplegable debería ser accesible mediante el teclado, no solo con el mouse.</p>
+            <img src="Imagen Menu.jpeg" alt="Menú desplegable">
+            <p><strong>Comprensibilidad:</strong> Los enlaces de navegación deberían ser claros y descriptivos, como "Inicio", "Acerca de", "Contacto", etc.</p>
+            <img src="Imagen Enlaces.png" alt="Enlaces de navegación">
+            <p><strong>Robustez:</strong> El código HTML debería ser válido según las especificaciones del W3C para garantizar la compatibilidad con diferentes navegadores y dispositivos.</p>
+            <img src="Codigo Html.jpeg" alt="Código HTML válido">
+        </section>
+    </main>
+</body>
+</html>
